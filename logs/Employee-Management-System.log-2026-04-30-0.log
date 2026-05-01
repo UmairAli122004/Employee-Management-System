@@ -1,0 +1,251 @@
+2026-04-30T10:29:17.282+05:30  INFO 21044 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Starting EmployeeManagementSystemApplication using Java 22 with PID 21044 (C:\Interview Questions\DSA interview questions\Employee-Management-System\target\classes started by asus in C:\Interview Questions\DSA interview questions\Employee-Management-System)
+2026-04-30T10:29:17.320+05:30 DEBUG 21044 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-30T10:29:17.323+05:30  INFO 21044 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T10:29:21.436+05:30  INFO 21044 --- [Employee-Management-System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-30T10:29:21.906+05:30  INFO 21044 --- [Employee-Management-System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 435 ms. Found 6 JPA repository interfaces.
+2026-04-30T10:29:24.959+05:30  INFO 21044 --- [Employee-Management-System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-30T10:29:25.031+05:30  INFO 21044 --- [Employee-Management-System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T10:29:25.031+05:30  INFO 21044 --- [Employee-Management-System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-30T10:29:25.363+05:30  INFO 21044 --- [Employee-Management-System] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-30T10:29:25.364+05:30  INFO 21044 --- [Employee-Management-System] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7771 ms
+2026-04-30T10:29:26.650+05:30  INFO 21044 --- [Employee-Management-System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-30T10:29:26.956+05:30  INFO 21044 --- [Employee-Management-System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-30T10:29:27.119+05:30  INFO 21044 --- [Employee-Management-System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-30T10:29:28.427+05:30  INFO 21044 --- [Employee-Management-System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-30T10:29:28.556+05:30  INFO 21044 --- [Employee-Management-System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-30T10:29:29.879+05:30  INFO 21044 --- [Employee-Management-System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5599dc60
+2026-04-30T10:29:29.885+05:30  INFO 21044 --- [Employee-Management-System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-30T10:29:33.495+05:30  INFO 21044 --- [Employee-Management-System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-30T10:29:33.879+05:30  INFO 21044 --- [Employee-Management-System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T10:29:35.201+05:30  INFO 21044 --- [Employee-Management-System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-30T10:29:38.384+05:30  WARN 21044 --- [Employee-Management-System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-30T10:29:38.460+05:30  INFO 21044 --- [Employee-Management-System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customEmployeeDetailsService
+2026-04-30T10:29:40.636+05:30  INFO 21044 --- [Employee-Management-System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-30T10:29:40.673+05:30  INFO 21044 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Started EmployeeManagementSystemApplication in 26.015 seconds (process running for 28.177)
+2026-04-30T10:29:41.993+05:30  INFO 21044 --- [Employee-Management-System] [main] c.E.Security.DataInitializer             : ℹ️  Admin user password synced: admin@ems.com
+2026-04-30T10:30:36.323+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T10:30:36.323+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T10:30:36.335+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-04-30T10:30:41.124+05:30  WARN 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.C.E.ExceptionControllerAdvice        : No static resource found: No static resource favicon.ico.
+2026-04-30T10:51:53.589+05:30  WARN 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [120] milliseconds.
+2026-04-30T11:10:00.201+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.UserController            : REST request to login user: suhail@gmail.com
+2026-04-30T11:10:00.906+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.UserController            : User suhail@gmail.com successfully logged in
+2026-04-30T11:10:01.906+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:10:02.283+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:10:02.305+05:30  WARN 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-30T11:10:32.181+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.UpdateEmployeeController  : REST request to update employee ID: 6
+2026-04-30T11:10:32.195+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.S.S.UpdateEmployeeServiceImpl        : Attempting to update employee ID: 6
+2026-04-30T11:10:32.321+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.S.S.UpdateEmployeeServiceImpl        : Employee ID 6 successfully updated
+2026-04-30T11:10:32.409+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.UpdateEmployeeController  : Successfully updated employee ID: 6
+2026-04-30T11:10:33.648+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:10:33.673+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:11:00.295+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.UpdateEmployeeController  : REST request to update employee ID: 8
+2026-04-30T11:11:00.300+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.S.S.UpdateEmployeeServiceImpl        : Attempting to update employee ID: 8
+2026-04-30T11:11:00.323+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.S.S.UpdateEmployeeServiceImpl        : Employee ID 8 successfully updated
+2026-04-30T11:11:00.345+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.UpdateEmployeeController  : Successfully updated employee ID: 8
+2026-04-30T11:11:01.574+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:11:01.598+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:11:07.575+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[id, ASC]
+2026-04-30T11:11:07.607+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:14:32.555+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.UserController            : Attempting to register a new user with email: abhishek123@gmail.com
+2026-04-30T11:14:32.606+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: abhishek123@gmail.com
+2026-04-30T11:14:34.132+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 35
+2026-04-30T11:14:34.155+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.UserController            : User successfully registered with ID: 35
+2026-04-30T11:15:38.149+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.UserController            : Attempting to register a new user with email: utsav123@gmail.com
+2026-04-30T11:15:38.150+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: utsav123@gmail.com
+2026-04-30T11:15:38.448+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 36
+2026-04-30T11:15:38.448+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.UserController            : User successfully registered with ID: 36
+2026-04-30T11:16:20.521+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.UserController            : Attempting to register a new user with email: ansarul123@gmail.com
+2026-04-30T11:16:20.521+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: ansarul123@gmail.com
+2026-04-30T11:16:20.809+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 37
+2026-04-30T11:16:20.809+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.UserController            : User successfully registered with ID: 37
+2026-04-30T11:16:34.206+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.UserController            : Attempting to register a new user with email: saddam123@gmail.com
+2026-04-30T11:16:34.206+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: saddam123@gmail.com
+2026-04-30T11:16:34.498+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 38
+2026-04-30T11:16:34.500+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.UserController            : User successfully registered with ID: 38
+2026-04-30T11:16:57.439+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.UserController            : Attempting to register a new user with email: soaib123@gmail.com
+2026-04-30T11:16:57.439+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: soaib123@gmail.com
+2026-04-30T11:16:57.727+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 39
+2026-04-30T11:16:57.731+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.UserController            : User successfully registered with ID: 39
+2026-04-30T11:17:12.002+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.UserController            : Attempting to register a new user with email: sahil123@gmail.com
+2026-04-30T11:17:12.002+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: sahil123@gmail.com
+2026-04-30T11:17:12.285+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 40
+2026-04-30T11:17:12.285+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.UserController            : User successfully registered with ID: 40
+2026-04-30T11:18:03.606+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.UserController            : REST request to login user: suhail@gmail.com
+2026-04-30T11:18:03.990+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.UserController            : User suhail@gmail.com successfully logged in
+2026-04-30T11:18:04.569+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:18:04.576+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:18:54.691+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 8765987564
+2026-04-30T11:18:54.694+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 8765987564
+2026-04-30T11:18:54.855+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 26
+2026-04-30T11:18:54.856+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 26
+2026-04-30T11:18:54.879+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:18:54.945+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:19:50.698+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 9876785432
+2026-04-30T11:19:50.700+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 9876785432
+2026-04-30T11:19:50.750+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 27
+2026-04-30T11:19:50.751+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 27
+2026-04-30T11:19:50.773+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:19:50.794+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:20:34.551+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 8675432123
+2026-04-30T11:20:34.557+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 8675432123
+2026-04-30T11:20:34.611+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 28
+2026-04-30T11:20:34.615+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 28
+2026-04-30T11:20:34.634+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:20:34.655+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:21:14.534+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 7689056789
+2026-04-30T11:21:14.534+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 7689056789
+2026-04-30T11:21:14.585+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 29
+2026-04-30T11:21:14.585+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 29
+2026-04-30T11:21:14.605+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:21:14.623+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:22:09.434+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 8756434563
+2026-04-30T11:22:09.434+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 8756434563
+2026-04-30T11:22:09.488+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 30
+2026-04-30T11:22:09.489+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 30
+2026-04-30T11:22:09.508+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:22:09.525+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:23:06.519+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 9876567574
+2026-04-30T11:23:06.521+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 9876567574
+2026-04-30T11:23:06.574+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 31
+2026-04-30T11:23:06.574+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 31
+2026-04-30T11:23:06.598+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:23:06.621+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:23:10.758+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[id, ASC]
+2026-04-30T11:23:10.781+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:23:12.199+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.PaginationController      : REST request to find employees by page: page=2, size=7, sort=[id, ASC]
+2026-04-30T11:23:12.216+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.PaginationController      : Successfully retrieved page 2 of employees
+2026-04-30T11:23:20.645+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[id, ASC]
+2026-04-30T11:23:20.647+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:23:23.358+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : REST request to find employees by page: page=2, size=7, sort=[id, ASC]
+2026-04-30T11:23:23.363+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : Successfully retrieved page 2 of employees
+2026-04-30T11:23:41.266+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.DeleteEmployeeController  : REST request to delete employee ID: 30
+2026-04-30T11:23:41.267+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.S.S.DeleteEmployeeServiceImpl        : Attempting to delete employee ID: 30
+2026-04-30T11:23:41.514+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.S.S.DeleteEmployeeServiceImpl        : Employee ID 30 successfully deleted
+2026-04-30T11:23:41.516+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.DeleteEmployeeController  : Successfully deleted employee ID: 30
+2026-04-30T11:23:41.536+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : REST request to find employees by page: page=2, size=7, sort=[id, ASC]
+2026-04-30T11:23:41.547+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : Successfully retrieved page 2 of employees
+2026-04-30T11:23:48.163+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[id, ASC]
+2026-04-30T11:23:48.188+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:23:52.989+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:23:53.010+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-5] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:23:58.908+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[id, ASC]
+2026-04-30T11:23:58.910+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:24:01.027+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.PaginationController      : REST request to find employees by page: page=2, size=7, sort=[id, ASC]
+2026-04-30T11:24:01.031+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.PaginationController      : Successfully retrieved page 2 of employees
+2026-04-30T11:24:38.731+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 9876543212
+2026-04-30T11:24:38.734+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 9876543212
+2026-04-30T11:24:38.767+05:30  WARN 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.S.SeviceImpl.EmployeeServiceImpl     : Failed to add employee: User ID 98 not found
+2026-04-30T11:24:38.784+05:30  WARN 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.C.E.ExceptionControllerAdvice        : User not found: User not found with ID: 98
+2026-04-30T11:25:18.048+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.UserController            : Attempting to register a new user with email: soiab123@gmail.com
+2026-04-30T11:25:18.048+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Service.SeviceImpl.UserServiceImpl   : Processing registration for email: soiab123@gmail.com
+2026-04-30T11:25:18.341+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Service.SeviceImpl.UserServiceImpl   : User successfully registered with ID: 41
+2026-04-30T11:25:18.341+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.UserController            : User successfully registered with ID: 41
+2026-04-30T11:25:35.838+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.UserController            : REST request to login user: suhail@gmail.com
+2026-04-30T11:25:36.125+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.UserController            : User suhail@gmail.com successfully logged in
+2026-04-30T11:25:36.551+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:25:36.553+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:26:25.757+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.CreateEmployeeController  : REST request to add employee with phone: 9876543456
+2026-04-30T11:26:25.798+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.S.SeviceImpl.EmployeeServiceImpl     : Attempting to add employee with phone number: 9876543456
+2026-04-30T11:26:26.116+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.S.SeviceImpl.EmployeeServiceImpl     : Employee successfully added with ID: 32
+2026-04-30T11:26:26.131+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.CreateEmployeeController  : Successfully created employee with ID: 32
+2026-04-30T11:26:26.266+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:26:26.343+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:26:34.513+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[id, ASC]
+2026-04-30T11:26:34.564+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:26:36.758+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.PaginationController      : REST request to find employees by page: page=2, size=7, sort=[id, ASC]
+2026-04-30T11:26:36.787+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-7] c.E.Controller.PaginationController      : Successfully retrieved page 2 of employees
+2026-04-30T11:26:53.548+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:26:53.573+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-8] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:26:54.834+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T11:26:54.835+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-6] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:26:58.171+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[firstName, ASC]
+2026-04-30T11:26:58.651+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-9] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T11:27:06.447+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : REST request to find employees by page: page=1, size=7, sort=[firstName, ASC]
+2026-04-30T11:27:06.828+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-10] c.E.Controller.PaginationController      : Successfully retrieved page 1 of employees
+2026-04-30T11:27:08.703+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : REST request to find employees by page: page=2, size=7, sort=[firstName, ASC]
+2026-04-30T11:27:08.747+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : Successfully retrieved page 2 of employees
+2026-04-30T11:27:21.139+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.FilterEmployeeController  : REST request to filter employees by department name: it
+2026-04-30T11:27:21.539+05:30  INFO 21044 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.FilterEmployeeController  : Successfully filtered employees by department name: it, count: 4
+2026-04-30T11:27:57.723+05:30  INFO 21044 --- [Employee-Management-System] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T11:27:57.788+05:30  INFO 21044 --- [Employee-Management-System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-30T11:27:57.837+05:30  INFO 21044 --- [Employee-Management-System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-30T16:30:04.186+05:30  INFO 25468 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Starting EmployeeManagementSystemApplication using Java 22 with PID 25468 (C:\Interview Questions\DSA interview questions\Employee-Management-System\target\classes started by asus in C:\Interview Questions\DSA interview questions\Employee-Management-System)
+2026-04-30T16:30:04.187+05:30 DEBUG 25468 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-30T16:30:04.187+05:30  INFO 25468 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T16:30:05.262+05:30  INFO 25468 --- [Employee-Management-System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-30T16:30:05.360+05:30  INFO 25468 --- [Employee-Management-System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 6 JPA repository interfaces.
+2026-04-30T16:30:06.333+05:30  INFO 25468 --- [Employee-Management-System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-30T16:30:06.352+05:30  INFO 25468 --- [Employee-Management-System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T16:30:06.352+05:30  INFO 25468 --- [Employee-Management-System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-30T16:30:06.430+05:30  INFO 25468 --- [Employee-Management-System] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-30T16:30:06.430+05:30  INFO 25468 --- [Employee-Management-System] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2192 ms
+2026-04-30T16:30:06.683+05:30  INFO 25468 --- [Employee-Management-System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-30T16:30:06.754+05:30  INFO 25468 --- [Employee-Management-System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-30T16:30:06.795+05:30  INFO 25468 --- [Employee-Management-System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-30T16:30:07.148+05:30  INFO 25468 --- [Employee-Management-System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-30T16:30:07.194+05:30  INFO 25468 --- [Employee-Management-System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-30T16:30:07.592+05:30  INFO 25468 --- [Employee-Management-System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35fb3209
+2026-04-30T16:30:07.594+05:30  INFO 25468 --- [Employee-Management-System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-30T16:30:08.497+05:30  INFO 25468 --- [Employee-Management-System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-30T16:30:08.612+05:30  INFO 25468 --- [Employee-Management-System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T16:30:08.947+05:30  INFO 25468 --- [Employee-Management-System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-30T16:30:09.848+05:30  WARN 25468 --- [Employee-Management-System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-30T16:30:09.869+05:30  INFO 25468 --- [Employee-Management-System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customEmployeeDetailsService
+2026-04-30T16:30:10.521+05:30  INFO 25468 --- [Employee-Management-System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-30T16:30:10.527+05:30  INFO 25468 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Started EmployeeManagementSystemApplication in 6.942 seconds (process running for 7.415)
+2026-04-30T16:30:10.849+05:30  INFO 25468 --- [Employee-Management-System] [main] c.E.Security.DataInitializer             : ℹ️  Admin user password synced: admin@ems.com
+2026-04-30T16:33:28.244+05:30  INFO 25468 --- [Employee-Management-System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T16:33:28.249+05:30  INFO 25468 --- [Employee-Management-System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T16:33:28.264+05:30  INFO 25468 --- [Employee-Management-System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2026-04-30T16:33:50.627+05:30  INFO 25468 --- [Employee-Management-System] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T16:33:50.636+05:30  INFO 25468 --- [Employee-Management-System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-30T16:33:50.656+05:30  INFO 25468 --- [Employee-Management-System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-30T16:33:59.378+05:30  INFO 14948 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Starting EmployeeManagementSystemApplication using Java 22 with PID 14948 (C:\Interview Questions\DSA interview questions\Employee-Management-System\target\classes started by asus in C:\Interview Questions\DSA interview questions\Employee-Management-System)
+2026-04-30T16:33:59.379+05:30 DEBUG 14948 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-30T16:33:59.381+05:30  INFO 14948 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T16:34:00.362+05:30  INFO 14948 --- [Employee-Management-System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-30T16:34:00.467+05:30  INFO 14948 --- [Employee-Management-System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 6 JPA repository interfaces.
+2026-04-30T16:34:01.312+05:30  INFO 14948 --- [Employee-Management-System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-30T16:34:01.329+05:30  INFO 14948 --- [Employee-Management-System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T16:34:01.329+05:30  INFO 14948 --- [Employee-Management-System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-30T16:34:01.419+05:30  INFO 14948 --- [Employee-Management-System] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-30T16:34:01.419+05:30  INFO 14948 --- [Employee-Management-System] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1982 ms
+2026-04-30T16:34:01.680+05:30  INFO 14948 --- [Employee-Management-System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-30T16:34:01.775+05:30  INFO 14948 --- [Employee-Management-System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-30T16:34:01.830+05:30  INFO 14948 --- [Employee-Management-System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-30T16:34:02.183+05:30  INFO 14948 --- [Employee-Management-System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-30T16:34:02.225+05:30  INFO 14948 --- [Employee-Management-System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-30T16:34:02.687+05:30  INFO 14948 --- [Employee-Management-System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35fb3209
+2026-04-30T16:34:02.689+05:30  INFO 14948 --- [Employee-Management-System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-30T16:34:03.580+05:30  INFO 14948 --- [Employee-Management-System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-30T16:34:03.656+05:30  INFO 14948 --- [Employee-Management-System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T16:34:03.956+05:30  INFO 14948 --- [Employee-Management-System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-30T16:34:04.866+05:30  WARN 14948 --- [Employee-Management-System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-30T16:34:04.886+05:30  INFO 14948 --- [Employee-Management-System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customEmployeeDetailsService
+2026-04-30T16:34:05.514+05:30  INFO 14948 --- [Employee-Management-System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-30T16:34:05.521+05:30  INFO 14948 --- [Employee-Management-System] [main] c.E.EmployeeManagementSystemApplication  : Started EmployeeManagementSystemApplication in 6.722 seconds (process running for 7.149)
+2026-04-30T16:34:05.906+05:30  INFO 14948 --- [Employee-Management-System] [main] c.E.Security.DataInitializer             : ℹ️  Admin user password synced: admin@ems.com
+2026-04-30T16:35:50.376+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T16:35:50.378+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T16:35:50.383+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-04-30T16:36:04.321+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.UserController            : REST request to login user: suhail@gmail.com
+2026-04-30T16:36:04.482+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-4] c.E.Controller.UserController            : User suhail@gmail.com successfully logged in
+2026-04-30T16:36:04.914+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T16:36:04.988+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-1] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T16:36:04.996+05:30  WARN 14948 --- [Employee-Management-System] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-04-30T16:36:30.484+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.UpdateEmployeeController  : REST request to update employee ID: 6
+2026-04-30T16:36:30.492+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.S.S.UpdateEmployeeServiceImpl        : Attempting to update employee ID: 6
+2026-04-30T16:36:30.527+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.S.S.UpdateEmployeeServiceImpl        : Employee ID 6 successfully updated
+2026-04-30T16:36:30.557+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-2] c.E.Controller.UpdateEmployeeController  : Successfully updated employee ID: 6
+2026-04-30T16:36:31.783+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.PaginationController      : REST request to find employees by page: page=0, size=7, sort=[id, ASC]
+2026-04-30T16:36:31.794+05:30  INFO 14948 --- [Employee-Management-System] [http-nio-8080-exec-3] c.E.Controller.PaginationController      : Successfully retrieved page 0 of employees
+2026-04-30T16:36:49.404+05:30  INFO 14948 --- [Employee-Management-System] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T16:36:49.406+05:30  INFO 14948 --- [Employee-Management-System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-30T16:36:49.416+05:30  INFO 14948 --- [Employee-Management-System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
