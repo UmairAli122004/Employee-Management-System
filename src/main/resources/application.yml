@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Employee-Management-System
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+            authorization-grant-type: authorization_code
+            scope:
+              - profile
+              - email
+        provider:
+          google:
+            # Authorization API
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+            # Token API
+            token-uri: https://oauth2.googleapis.com/token
+            # User Profile API
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo

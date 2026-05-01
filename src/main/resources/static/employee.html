@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Panel - EMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="navbar-brand">EMS Employee</a>
+        <div class="flex gap-1">
+            <a href="dashboard.html" class="btn btn-outline logout-btn">Dashboard</a>
+            <button id="logoutBtn" class="btn btn-primary logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="auth-card" style="margin: 0 auto; max-width: 620px;">
+            <h2 id="pageHeading" style="text-align:center; margin-bottom: 1.5rem;">Search Employee Profile</h2>
+
+            <!-- Search form — visible for ADMIN, hidden for EMPLOYEE (by JS) -->
+            <div id="searchSection">
+                <form id="employeeIdForm" class="flex gap-1" autocomplete="off">
+                    <input type="number" id="empIdInput" class="form-control"
+                           placeholder="Enter Employee ID" min="1" required>
+                    <button type="submit" class="btn btn-primary" style="width:auto;">Search</button>
+                </form>
+            </div>
+
+            <!-- Inline search messages -->
+            <p id="searchErrorMsg" class="error-msg hidden" style="margin-top:0.75rem;"></p>
+            <p id="searchInfoMsg" class="success-msg hidden" style="margin-top:0.75rem;"></p>
+            <div id="employeeProfile" class="hidden mt-2"
+                 style="text-align:left; background:#F9FAFB; padding:1.5rem;
+                        border-radius:var(--radius); border:1px solid var(--border-color);">
+                <h3 style="margin-bottom:1rem; color:var(--primary);">Employee Details</h3>
+                <table style="width:100%; border-collapse:collapse;">
+                    <tbody>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600; width:140px;">ID</td>
+                            <td id="p-id" style="padding:0.5rem 0;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600;">Full Name</td>
+                            <td id="p-name" style="padding:0.5rem 0;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600;">Phone</td>
+                            <td id="p-phone" style="padding:0.5rem 0;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600;">Address</td>
+                            <td id="p-address" style="padding:0.5rem 0;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600;">Salary</td>
+                            <td id="p-salary" style="padding:0.5rem 0;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600;">Department</td>
+                            <td id="p-dept" style="padding:0.5rem 0;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 0; font-weight:600;">Status</td>
+                            <td id="p-status" style="padding:0.5rem 0;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/employee.js"></script>
+</body>
+</html>

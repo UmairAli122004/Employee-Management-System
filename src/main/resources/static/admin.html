@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - EMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="navbar-brand">EMS Admin</a>
+        <div class="flex gap-1">
+
+            <a href="dashboard.html" class="btn btn-outline logout-btn">Dashboard</a>
+            <button id="logoutBtn" class="btn btn-primary logout-btn">Logout</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Employee Management</h2>
+
+        <!-- ADD EMPLOYEE COLLAPSIBLE PANEL -->
+        <div class="collapsible-header" id="toggleAddForm">
+
+            <span>&#xff0b; Add New Employee</span>
+            <span class="toggle-icon">&#9660;</span>
+        </div>
+        <div id="addEmployeePanel" class="panel-body hidden">
+            <form id="addEmployeeForm" autocomplete="off">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="add-userId">User ID</label>
+                        <input type="number" id="add-userId" class="form-control" placeholder="Linked User ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-firstName">First Name</label>
+                        <input type="text" id="add-firstName" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-lastName">Last Name</label>
+                        <input type="text" id="add-lastName" class="form-control" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-phone">Phone Number</label>
+                        <input type="text" id="add-phone" class="form-control" placeholder="e.g. 9876XXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-address">Address</label>
+                        <input type="text" id="add-address" class="form-control" placeholder="Full Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-salary">Salary</label>
+                        <input type="number" id="add-salary" class="form-control" placeholder="e.g. 50000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-deptId">Department ID</label>
+                        <input type="number" id="add-deptId" class="form-control" placeholder="Department ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-status">Status</label>
+                        <select id="add-status" class="form-control" required>
+                            <option value="ACTIVE">ACTIVE</option>
+                            <option value="INACTIVE">INACTIVE</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="addFormMsg" class="hidden"></p>
+                <div class="flex gap-1" style="margin-top:1rem;">
+                    <button type="submit" class="btn btn-primary" style="width:auto;">Save Employee</button>
+                    <button type="reset" class="btn btn-outline" style="width:auto;">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- CALCULATE SALARY COLLAPSIBLE PANEL -->
+        <div class="collapsible-header" id="toggleSalaryForm" style="margin-top:1.5rem;">
+            <span>&#xff0b; Calculate Employee Salary</span>
+            <span class="toggle-icon">&#9660;</span>
+        </div>
+        <div id="salaryCalculationPanel" class="panel-body hidden">
+            <form id="salaryCalcForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="calc-employeeId">Employee ID</label>
+                        <input type="number" id="calc-employeeId" class="form-control" placeholder="Employee ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calc-percentage">Percentage Increase (%)</label>
+                        <input type="number" id="calc-percentage" class="form-control" placeholder="e.g. 10" step="0.01" required>
+                    </div>
+                </div>
+                <p id="salaryCalcMsg" class="hidden"></p>
+                <div class="flex gap-1" style="margin-top:1rem;">
+                    <button type="submit" class="btn btn-primary" style="width:auto;">Calculate Salary</button>
+                    <button type="reset" class="btn btn-outline" style="width:auto;">Clear</button>
+                </div>
+            </form>
+
+            <!-- Result Display -->
+            <div id="salaryResultPanel" class="hidden" style="margin-top: 1.5rem; background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px;">
+                <h4 style="margin-top: 0; color: #4facfe; font-size: 1.1rem;">Calculation Result</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+                    <div><span style="color: #aaa;">Name</span><div id="res-name" style="font-weight: 600; font-size: 1.05rem;"></div></div>
+                    <div><span style="color: #aaa;">Department</span><div id="res-dept" style="font-weight: 600; font-size: 1.05rem;"></div></div>
+                    <div><span style="color: #aaa;">Base Salary</span><div id="res-base" style="font-weight: 600; font-size: 1.05rem; color: #e2e8f0;"></div></div>
+                    <div><span style="color: #aaa;">Calculated Salary</span><div id="res-calc" style="font-weight: 700; font-size: 1.2rem; color: #10b981;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEARCH BAR + SORT -->
+        <div class="table-wrapper" style="padding:1rem; margin-top:1.5rem;">
+            <form id="searchForm" class="flex gap-1" style="align-items:end; flex-wrap:wrap;">
+                <div class="form-group" style="margin-bottom:0;">
+                    <label for="searchType">Search By</label>
+                    <select id="searchType" class="form-control" style="width:auto;">
+                        <option value="id">Employee ID</option>
+                        <option value="deptId">Department ID</option>
+                        <option value="deptName">Department Name</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom:0; flex:1; min-width:180px;">
+                    <label for="searchInput">Query</label>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Enter ID or Name...">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:auto; align-self:flex-end;">Search</button>
+                <button type="button" class="btn btn-outline" style="width:auto; align-self:flex-end;" id="resetSearchBtn">Reset</button>
+
+                <!-- Sort Dropdown -->
+                <div class="form-group" style="margin-bottom:0; margin-left:auto;">
+                    <label for="sortSelect">Sort By</label>
+                    <select id="sortSelect" class="form-control" style="width:auto;">
+                        <option value="id">Default (ID)</option>
+                        <option value="firstName">First Name</option>
+                        <option value="phoneNumber">Phone Number</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- EMPLOYEE TABLE -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody">
+                    <tr><td colspan="7" class="text-center">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="pagination">
+            <button id="prevBtn" class="btn btn-outline">&#8592; Previous</button>
+            <span id="pageNumber" class="page-indicator">Page 1</span>
+            <button id="nextBtn" class="btn btn-outline">Next &#8594;</button>
+        </div>
+    </div>
+
+    <!-- UPDATE MODAL -->
+    <div id="updateModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Update Employee</h3>
+                <button class="modal-close" id="closeModal">&#215;</button>
+            </div>
+            <form id="updateEmployeeForm" autocomplete="off">
+                <input type="hidden" id="upd-empId">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="upd-firstName">First Name</label>
+                        <input type="text" id="upd-firstName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="upd-lastName">Last Name</label>
+                        <input type="text" id="upd-lastName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="upd-phone">Phone Number</label>
+                        <input type="text" id="upd-phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="upd-address">Address</label>
+                        <input type="text" id="upd-address" class="form-control" required>
+                    </div>
+                </div>
+                <p id="updFormMsg" class="hidden"></p>
+                <div class="flex gap-1" style="margin-top:1rem;">
+                    <button type="submit" class="btn btn-primary" style="width:auto;">Update</button>
+                    <button type="button" class="btn btn-outline" style="width:auto;" id="cancelModal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

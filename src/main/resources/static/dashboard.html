@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="navbar-brand">EMS Portal</a>
+        <button id="logoutBtn" class="btn btn-outline logout-btn">Logout</button>
+    </nav>
+
+    <div class="container">
+        <div class="text-center">
+            <h1 style="color: var(--text-main);">Welcome to the Dashboard</h1>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">Select a panel to continue based on your role.</p>
+        </div>
+
+        <div class="dashboard-options" id="dashboardOptions">
+            <!-- Panels injected by JS based on role -->
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            if (!(await ensureAuth())) return;
+
+            const role = localStorage.getItem('userRole');
+            const optionsContainer = document.getElementById('dashboardOptions');
+
+            if (role === 'ROLE_EMPLOYEE') {
+                window.location.href = 'employee.html';
+                return;
+            }
+
+            if (role === 'ROLE_ADMIN') {
+
+                optionsContainer.innerHTML += `
+                    <a href="admin.html" class="option-card">
+                        <h3>Admin Panel</h3>
+                        <p>Manage employees, view all records, and perform administrative actions.</p>
+                    </a>
+                `;
+            }
+
+            optionsContainer.innerHTML += `
+                <a href="employee.html" class="option-card">
+                    <h3>Employee Panel</h3>
+                    <p>View specific employee details and profile information.</p>
+                </a>
+            `;
+        });
+    </script>
+</body>
+</html>
